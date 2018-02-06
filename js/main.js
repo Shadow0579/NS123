@@ -72,7 +72,7 @@ function checkCookie() {
   var u = getCookie("unichat_uid");
   if (u != "") {
     if (getCookie("unichat_welcome") == "true") {
-      if (!confirm("Welcome back to UniChat, " + u + "\n\nPress Cancel to stop further messages")) {
+      if (!confirm("Welcome back to NeChat, " + u + "\n\nPress Cancel to stop further messages")) {
         setCookie("unichat_welcome", "false", 2 * 365)
       }
     }
@@ -312,7 +312,7 @@ window.onload = function () {
     copy.setAttribute("type", "text");
     copy.readOnly = true;
     document.getElementById("share-chatroom").appendChild(copy);
-    copy.value = "https://legend-of-iphoenix.github.io/UniChatDemo/?room=" + room;
+    copy.value = "https://Shadow0579.github.io/NS123/?room=" + room;
     copy.id = "share-link";
     copy.onclick = function () {
       if (!document.getElementById("share-copied")) {
@@ -514,5 +514,5 @@ function redirect(url) {
 
 function redirectToNewPrivateRoom() {
   var roomID = Math.floor(Math.random() * 1048576).toString(16) + (new Date().getTime().toString(16).substring(2, 8)) + Math.floor(Math.random() * 1048576).toString(16);
-  window.open("https://legend-of-iphoenix.github.io/UniChatDemo/?room=" + roomID)
+  window.open("https://Shadow0579.github.io/UniChatDemo/?room=" + roomID)
 }
