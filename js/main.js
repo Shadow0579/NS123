@@ -514,5 +514,5 @@ function redirect(url) {
 
 function redirectToNewPrivateRoom() {
   var roomID = Math.floor(Math.random() * 1048576).toString(16) + (new Date().getTime().toString(16).substring(2, 8)) + Math.floor(Math.random() * 1048576).toString(16);
-  window.open("https://Shadow0579.github.io/UniChatDemo/?room=" + roomID)
+  window.open("https://Shadow0579.github.io/NS123/?room=" + roomID)
 }
